@@ -2,54 +2,55 @@
 
 
 :root{
-    --Brightorange: hsl(31, 77%, 52%);
-    --Darkcyan: hsl(184, 100%, 22%);
-    --Verydarkcyan: hsl(179, 100%, 13%);
-    --Transparentwhiteparagraphs: hsla(0, 0%, 100%, 0.75);
-    --Verylightgraybackgroundheadingsbuttons: hsl(0, 0%, 95%);
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --semi-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
 }
 
 body{
     width: 100vw;
     min-height: 100vh;
-    background-color: var(--Verylightgraybackgroundheadingsbuttons);
+    background-color: var(--very-light-gray);
     display: grid;
     place-content: center;
     font-size: 15px;
     font-family: "Lexend Deca", sans-serif;
 }
 
-.card{
+.cards {
     width: 770px;
-    height: 420px;
+    min-height: 420px;
     display: flex;
     border-radius: 10px;
 }
 
-.card__sedans{
+.card:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.card:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.card {
     display: flex;
     flex-direction: column;
-    background-color: var(--Brightorange);
-    border-radius: 10px 0px 0px 10px;
     padding: 40px;
     gap: 5px;
 }
 
-.card__suvs{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--Darkcyan);
-    padding: 40px;
-    gap: 5px;
+.card--bg-bright-orange {
+    background-color: var(--bright-orange);
 }
 
-.card__luxury{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--Verydarkcyan);
-    border-radius: 0px 10px 10px 0px;
-    padding: 40px;
-    gap: 5px;
+.card--bg-dark-cyan {
+    background-color: var(--dark-cyan);
+}
+
+.card--bg-very-dark-cyan {
+    background-color: var(--very-dark-cyan);
 }
 
 .card__icon{
@@ -57,7 +58,7 @@ body{
 }
 
 .card__title{
-    color: var(--Verylightgraybackgroundheadingsbuttons);
+    color: var(--very-light-gray);
     text-transform: uppercase;
     font-family: 'Big Shoulders Display', sans-serif;
     font-size: 2rem;
@@ -65,7 +66,7 @@ body{
 }
 
 .card__description{
-    color: var(--Transparentwhiteparagraphs);
+    color: var(--semi-transparent-white);
     font-size: 0.8rem;
     font-family: 300;
     line-height: 20px;
@@ -74,58 +75,54 @@ body{
 .card__button{
     margin-top: 60px;
     width: 120px;
-    height: 100px;
+    height: 40px;
     border-radius: 20px;
     border: none;
-    background-color: var(--Verylightgraybackgroundheadingsbuttons);
+    background-color: var(--very-light-gray);
     font-weight: 900;
+    cursor: pointer;
 }
 
 .card__button--sedans{
-    color: var(--Brightorange);
+    color: var(--bright-orange);
 }
 
 .card__button--sedans:hover{
-    color: var(--Transparentwhiteparagraphs);
-    background-color: var(--Brightorange);
-    border: 1px solid var(--Transparentwhiteparagraphs);
+    color: var(--semi-transparent-white);
+    background-color: var(--bright-orange);
+    border: 1px solid var(--semi-transparent-white);
 }
 
 .card__button--suvs{
-    color: var(--Darkcyan)
+    color: var(--dark-cyan)
 }
 
 .card__button--suvs:hover{
-    color: var(--Transparentwhiteparagraphs);
-    background-color: var(--Darkcyan);
-    border: 1px solid var(--Transparentwhiteparagraphs);
+    color: var(--semi-transparent-white);
+    background-color: var(--dark-cyan);
+    border: 1px solid var(--semi-transparent-white);
 }
 
 .card__button--luxury{
-    color: var(--Verydarkcyan)
+    color: var(--very-dark-cyan)
 }
 
 .card__button--luxury:hover{
-    color: var(--Transparentwhiteparagraphs);
-    background-color: var(--Verydarkcyan);
-    border: 1px solid var(--Transparentwhiteparagraphs);
+    color: var(--semi-transparent-white);
+    background-color: var(--very-dark-cyan);
+    border: 1px solid var(--semi-transparent-white);
 }
 
 @media (max-width: 819px){
-    .card{
+    .cards{
         width: 300px;
         flex-direction: column;
     }
-
-    .card__button{
-        height: 40px;
-    }
-
-    .card__sedans{
+    .card:first-child{
         border-radius: 10px 10px 0px 0px;
     }
 
-    .card__luxury{
+    .card:last-child{
         border-radius: 0px 0px 10px 10px;
     }
 }
