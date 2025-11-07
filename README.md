@@ -20,17 +20,28 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size.
 - See hover states for interactive elements.
 
-## Screenshot
-![Desktop preview](./design/desktop-design.jpg)
+
+## Screenshots
+
+- Desktop Design
+<img src="./design/desktop-design.jpg" alt="Desktop preview" width="600">
+
+- Desktop States
+<img src="./design/active-states.jpg" alt="Desktop preview states" width="600">
+
+- Mobile Design
+- <img src="./design/mobile-design.jpg" alt="Mobile preview" width="150">
+
 
 ## Links
 - Solution URL: [GitHub Repository](https://github.com/mlopezl/My-version-of-3-column-preview-card-component)
-- Live Site URL: *()*
+- Live Site URL: *(https://mlopezl.github.io/My-version-of-3-column-preview-card-component/)*
 
 ## My process
 - Used Flexbox to align the cards in rows.
 - Implemented hover states for buttons and cards.
 - Organized CSS using variables for colors and spacing.
+- Made the layout responsive for different screen sizes.
 
 ## Built with
 - HTML5
