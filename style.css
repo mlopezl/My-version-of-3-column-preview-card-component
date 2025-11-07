@@ -9,6 +9,11 @@
     --very-light-gray: hsl(0, 0%, 95%);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     width: 100vw;
     min-height: 100vh;
@@ -117,6 +122,7 @@ body{
     .cards{
         width: 300px;
         flex-direction: column;
+        margin: 10px 0px 10px 0px;
     }
     .card:first-child{
         border-radius: 10px 10px 0px 0px;
