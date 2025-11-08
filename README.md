@@ -5,7 +5,7 @@ This is my solution to the 3-column preview card component challenge on Frontend
 ## Table of contents
 - [Overview](#overview)
 - [The challenge](#the-challenge)
-- [Screenshot](#screenshot)
+- [Design](#design)
 - [Links](#links)
 - [My process](#my-process)
 - [Built with](#built-with)
@@ -21,7 +21,7 @@ Users should be able to:
 - See hover states for interactive elements.
 
 
-## Screenshots
+## Design
 
 - Desktop Design
 <img src="./design/desktop-design.jpg" alt="Desktop preview" width="600">
